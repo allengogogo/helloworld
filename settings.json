@@ -1,0 +1,41 @@
+//helloworld composer.json
+{
+    "name": "byallen/helloworld",
+    "description": "hello world",
+    "type": "library",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "allen"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "byallen\\helloworld\\": "src"
+        }
+    }
+}
+
+//satis.json
+{
+    "name": "My Repository",
+    "homepage": "http://package.myhost",
+    "repositories": [
+        { "type": "vcs", "url":"git@myhost:helloworld.git" }
+    ],
+    "require-all": true
+}
+
+//proj composer.json
+{
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "http://package.myhost"
+    }],
+    "require": {
+        "byallen/helloworld":"1.0"
+    }
+}
