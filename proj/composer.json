@@ -1,0 +1,13 @@
+{
+    "config": {
+        "secure-http": false,
+        "preferred-install": "dist"
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "http://package.myhost"
+    }],
+    "require": {
+        "byallen/helloworld":"1.0"
+    }
+}

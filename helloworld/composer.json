@@ -1,0 +1,16 @@
+{
+    "name": "byallen/helloworld",
+    "description": "hello world",
+    "type": "library",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "allen"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "byallen\\helloworld\\": "src"
+        }
+    }
+}

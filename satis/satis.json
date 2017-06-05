@@ -1,0 +1,8 @@
+{
+    "name": "My Repository",
+    "homepage": "http://package.myhost",
+    "repositories": [
+        { "type": "vcs", "url":"git@myhost:helloworld.git" }
+    ],
+    "require-all": true
+}
