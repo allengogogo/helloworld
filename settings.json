@@ -23,7 +23,11 @@
     "repositories": [
         { "type": "vcs", "url":"git@myhost:helloworld.git" }
     ],
-    "require-all": true
+    "require-all": true,
+    "archive": {
+        "directory":"dist", //將 package 包裝成 dist 版本, 若沒有設定可能會在 composer install 把 .git 一起下載到vendor
+        "skip-dev":true
+    }
 }
 
 //proj composer.json
